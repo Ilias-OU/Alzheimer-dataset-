@@ -1,0 +1,20 @@
+Questions:
+Retrieve all the data from the Alzheimer’s dataset.
+Alter the column types for various fields (e.g., Age, EDUC, SES, MMSE, CDR, eTIV, nWBV, ASF).
+Retrieve the average age and MMSE score for each group ("Demented" or "Nondemented").
+Find individuals with an MMSE score below the average MMSE score of their respective group.
+List all individuals whose SES is NULL. Provide their age and group.
+Find the top 5 youngest individuals with an ASF greater than the median ASF of the dataset.
+Count the number of males and females in each group.
+Calculate the average nWBV for individuals with a CDR of 0.5, grouped by SES.
+Identify the age range (min and max age) for each group and gender combination.
+Find individuals whose eTIV is higher than the average eTIV of all "Nondemented" individuals.
+Retrieve all individuals with an MMSE score higher than the average MMSE score of individuals in their own SES group.
+Use a CTE to find the average ASF for each group. Then, retrieve individuals whose ASF is above their group’s average.
+Use a recursive CTE to simulate categorizing individuals into percentile groups based on their eTIV values.
+Add a column that ranks individuals based on their MMSE score within each group.
+Compute the running average of nWBV values for individuals ordered by age within their group.
+Create a query that calculates the percentile rank of individual eTIV within their respective group.
+Assuming you have another table containing region-wise Alzheimer’s statistics, join it with this dataset to find regions with the highest average CDR.
+Combine data from another table (e.g., socioeconomic status by region) to analyze if individuals from a specific SES level tend to have higher MMSE scores.
+Create a new column categorizing individuals into "Young" (Age < 65), "Middle-Aged" (65 ≤ Age < 80), and "Senior" (Age ≥ 80).
